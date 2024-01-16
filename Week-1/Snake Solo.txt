@@ -1,0 +1,39 @@
+SnakeGame(int width, int height, int[][] food, int[][] snakeHead)
+snakeBody = []
+
+move(string: direction) -> int:
+	# move snake head according to use instruction
+	if R:
+		nextBlock = snakeHead[i][j+1]
+		return check_pos(nextBlock)
+	else if L:
+		nextBlock = snakeHead[i][j-1]
+		return check_pos(nextBlock)
+	else if D:
+		nextBlock = snakeHead[i-1][j]
+		return check_pos(nextBlock)
+	else if U:
+		nextBlock = snakeHead[i+1][j]
+		return check_pos(nextBlock)
+		
+check_pos(int[][] nextblock):
+	if nextBlock == food:
+		# add 1 to snake body
+		snakeHead = food_pos
+		snakeBody.append(food_pos)
+		# populate 1 new food
+		generate random x,y
+		while x,y in snakeBody:
+			generate random x,y
+		food_pos = x,y
+		return 1
+	# check if runs into wall
+	if nextBlock[i] > width or nextBlock[i] < 0 or nextBlock[j] > 0 or nextBlock[j] < 0:
+		return -1
+	# check if runs into self
+	if position in snakeBody:
+		pass
+	# move snake 1 without growing
+	else:
+		snakeHead = nextBlock
+		snakeBody.remove(lastBlock)

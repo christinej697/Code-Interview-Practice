@@ -1,0 +1,10 @@
+1/15/24
+
+First Non-Repeating Integer in a List
+--------------------------------------
+
+Given a list, find the first integer which is unique in the list.
+
+Input: List of ints, Output: int
+
+Ideas: Loop through the list. On each loop, when see a number for the first time, store in once seen list. If see a number on first time again, add it to the non-unique list. Once you have gone through, take the first number from seen list that is not in the non-unique list and return it.

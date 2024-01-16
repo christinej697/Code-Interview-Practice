@@ -1,0 +1,11 @@
+1/15/24
+
+Find Minimum Value in List
+---------------------------
+Given a list of integers of size n, find the minimum value in the list.
+
+Ideas: If list length 0 return None. If list len 1 return lst[0]. if len 2, compare those two elems and return. Otherwise, I need to sort the list (nlogn) and then grab the first element off it. To sort the list use three pointers (smallest, largest, and current). Start the smallest pointer at index 0, largest at index -1, and current at 1 (they contain the index num value). First check if smol < large, if not swap them. compare current to smallest pointer, if cur < smol then swap their elements. compare cur to lorg, if cur > lorg then swap their elements. increase cur. Do this whole loop until cur index equal to lorge index. Return the first element from the now sorted list.
+^^^ Craxy way gurl XD
+
+Good Idea: Set first elem equal to smallest. Then loop through all elem and update smallest if find one smaller. return smallest at end
+>> This is O(n) time

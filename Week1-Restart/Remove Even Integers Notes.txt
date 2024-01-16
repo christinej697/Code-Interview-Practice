@@ -1,0 +1,11 @@
+Naive:
+	Loop through and if odd, remove
+	
+Smart:
+	can i divide and conquer? start from each side on loop?
+	
+MERGE LIST NOTES
+-----------------
+ideas ->
+ - append both lists together and then divide and conquer sort
+ - loop through both one elem at time and compare then combine

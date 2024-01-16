@@ -1,0 +1,9 @@
+1/16/24
+
+Rearrange Positive & Negative Values
+--------------------------------------
+Take in a list and rearrange its elements such that all negative elemtns appear on the left and positive elements appear on the right of the list. Don't need to maintain the sorted order of the input list. Zero is treated as a positive integer.
+
+Input: list of int, Output: list of int
+
+Ideas: If list is empty or single elem, return original list. Left pointer starts at zero and right pointer starts at len of list. for each iteration, check if left is negative, if so then increase right pointer by 1. Otherwise set left flag true. Check if right is positive or 0, if so then decrease pointer by 1. Otherwise set right flag true. At end of each iteration, check if both flags are true, if so then swap the elements. Repeat loop until indexes equal or left > right. At end of loop, return list.

@@ -1,0 +1,19 @@
+1/12/24
+
+Find Second Maximum Value in a List
+-------------------------------------
+Given a list of size n, can you find the second maximum element in the list?
+Input: List, Output: Second largest elem in list
+
+Ideas:
+	loop through list, store largest and second largest elements as walk along. As walk along, check against second element first, if bigger than second, then compare to first. if bigger than first, set new biggest and set old biggest to second, else set new second. If not bigger than second num, move ot next.
+	
+Rotate List Right
+----------------------
+Given a list, rotate its elements to the right by k, can do it by one element at a time.
+Input: List & int, Output: List
+
+Ideas:
+for loop length of list, start counter at k-1. for each loop until index is list length, grab counter index element and insert into new list. when counter is list length, set counter to 0 and continue until k-1
+
+use generator?

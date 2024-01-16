@@ -1,0 +1,29 @@
+def rearrange(lst):
+    if len(lst) <= 1:
+        return lst
+    
+    left = 0
+    right = len(lst) -1
+    l_flag = False
+    r_flag = False
+    while left < right:
+        if lst[left] < 0:
+            left += 1
+        else:
+            l_flag = True
+
+        if lst[right] >= 0:
+            right -= 1
+        else:
+            r_flag = True
+
+        if l_flag and r_flag:
+            lst[left], lst[right] = lst[right], lst[left]
+            l_flag = False
+            r_flag = False
+    
+    return lst
+
+
+if __name__ == "__main__":
+    print(rearrange([10,-1,20,4,5,-9,-6]))

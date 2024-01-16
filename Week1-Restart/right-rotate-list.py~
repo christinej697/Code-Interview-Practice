@@ -1,0 +1,16 @@
+def right_rotate(lst, k):
+    length = len(lst)
+    if length == 0:
+        return lst
+    counter = -(k%length)
+    new_list = []
+    for loop in range(length):
+        new_list.append(lst[counter])
+        #if counter < 0:
+        #    counter = 1
+        #if counter >= 0:
+        counter += 1
+    return new_list
+
+if __name__ == "__main__":
+    print(right_rotate([10,20,30,40,50],3))

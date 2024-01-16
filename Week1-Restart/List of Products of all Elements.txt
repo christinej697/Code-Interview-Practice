@@ -1,0 +1,11 @@
+1/15/24
+
+List of Products of all Elements
+----------------------------------
+Given a list, modify it to that each index stores the product of all elements in the list except the element at the index itself.
+
+Input: List of numbers, Output: List of numbers
+
+Ideas: Find the product of all elements in the list. In loop through all the lists elements, set each element to that product divided by the element. return list after for loop. Account for zero division
+
+Time complexity: Each of the for loops are of linear time O(n). Because they are sequential, the total time complexity is O(n) + O(n) = O(n).

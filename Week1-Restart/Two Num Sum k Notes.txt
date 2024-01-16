@@ -1,0 +1,10 @@
+1/15/24
+
+Find Two Numbers that Add up to "k"
+-------------------------------------
+Implement function that will take a number k and a list of numbers as input and return two numbers from the list that add up to k.
+
+Ideas: First sort the list. Have a highest pointer and a lowest pointer. In a while loop, check if highest plus lowest is eq/l/gr than k. If sum is greater, move down high pointer. If sum is lower, move up low pointer. If equal, break loop and return list of two pointer numbers. If low pointer index equals higher pointer index, break loop as all possible matches have been checked and return empty list.
+
+Time Complexity:
+Pythton uses Timsort for their sort function, which is O(nlogn) time to sort the list. O(n) linear scan for while loop. Total is O(nlogn) + O(n) = O(nlogn)
